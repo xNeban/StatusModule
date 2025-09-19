@@ -1,7 +1,7 @@
 {
-    "name": "Sample Module",
+    "name": "Status Icons Module",
     "alias": "statusiconsmodule",
-    "description": "Sample module which displays a text in the dashboard",
+    "description": "Adds quick acess icons to easily change the status of conversations",
     "version": "1.0.0",
     "keywords": [],
     "active": 1,
