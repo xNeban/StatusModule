@@ -17,10 +17,24 @@ function addHorizontalStatusIcons()
         const liElement = document.createElement('li');
         const aElement  = document.createElement('a');
 
-        // match the 
-        aElement.textContent = itemText;
+        //aElement.textContent = itemText;
         aElement.href = '#';
-        aElement.setAttribute('data-status', index + 1)
+        aElement.setAttribute('data-status', index + 1);
+
+        switch (itemText) {
+            case "Active":
+                aElement.className = "green glyphicon glyphicon-flag";
+                break;
+            case "Pending":
+                aElement.className = "light-grey glyphicon glyphicon-ok";
+                break;
+            case "Closed":
+                aElement.className = "grey glyphicon glyphicon-lock";
+                break;
+            case "Spam":
+                aElement.className = "red glyphicon glyphicon-ban-circle";
+                break;
+        }
 
         liElement.appendChild(aElement);
         statusIcons.appendChild(liElement);
