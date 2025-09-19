@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'web', 'prefix' => 'samplemodule', 'namespace' => 'Modules\SampleModule\Http\Controllers'], function()
+Route::group(['middleware' => 'web', 'prefix' => 'statusiconsmodule', 'namespace' => 'Modules\StatusIconsModule\Http\Controllers'], function()
 {
-    Route::get('/', ['uses' => 'SampleModuleController@index', 'laroute' => true])->name('samplemodule_index');
+    Route::get('/', ['uses' => 'StatusIconsModuleController@index', 'laroute' => true])->name('statusiconsmodule_index');
 });

@@ -1,13 +1,13 @@
 {
     "name": "Sample Module",
-    "alias": "samplemodule",
+    "alias": "statusiconsmodule",
     "description": "Sample module which displays a text in the dashboard",
     "version": "1.0.0",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\SampleModule\\Providers\\SampleModuleServiceProvider"
+        "Modules\\StatusIconsModule\\Providers\\StatusIconsModuleServiceProvider"
     ],
     "aliases": {},
     "files": [

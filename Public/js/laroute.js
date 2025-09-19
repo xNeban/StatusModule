@@ -1,8 +1,8 @@
 (function () {
     var module_routes = [
     {
-        "uri": "samplemodule",
-        "name": "samplemodule_index"
+        "uri": "statusiconsmodule",
+        "name": "statusiconsmodule_index"
     }
 ];
 

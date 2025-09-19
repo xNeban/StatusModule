@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Rivsen\\Demo\\' => array($vendorDir . '/rivsen/hello-world/src'),
-    'Modules\\SampleModule\\' => array($baseDir . '/'),
+    'Modules\\StatusIconsModule\\' => array($baseDir . '/'),
 );

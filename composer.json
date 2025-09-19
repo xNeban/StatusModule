@@ -1,5 +1,5 @@
 {
-    "name": "freescout-helpdesk/samplemodule",
+    "name": "freescout-helpdesk/statusiconsmodule",
     "description": "",
     "authors": [
         {
@@ -10,7 +10,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\SampleModule\\Providers\\SampleModuleServiceProvider"
+                "Modules\\StatusIconsModule\\Providers\\StatusIconsModuleServiceProvider"
             ],
             "aliases": {
                 
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\SampleModule\\": ""
+            "Modules\\StatusIconsModule\\": ""
         }
     }
 }

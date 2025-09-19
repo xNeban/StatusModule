@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\SampleModule\Http\Controllers;
+namespace Modules\StatusIconsModule\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class SampleModuleController extends Controller
+class StatusIconsModuleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class SampleModuleController extends Controller
      */
     public function index()
     {
-        return view('samplemodule::index');
+        return view('statusiconsmodule::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class SampleModuleController extends Controller
      */
     public function create()
     {
-        return view('samplemodule::create');
+        return view('statusiconsmodule::create');
     }
 
     /**
@@ -41,7 +41,7 @@ class SampleModuleController extends Controller
      */
     public function show()
     {
-        return view('samplemodule::show');
+        return view('statusiconsmodule::show');
     }
 
     /**
@@ -50,7 +50,7 @@ class SampleModuleController extends Controller
      */
     public function edit()
     {
-        return view('samplemodule::edit');
+        return view('statusiconsmodule::edit');
     }
 
     /**

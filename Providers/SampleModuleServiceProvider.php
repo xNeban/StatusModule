@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\SampleModule\Providers;
+namespace Modules\StatusIconsModule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-define('SAMPLE_MODULE', 'samplemodule');
+define('SAMPLE_MODULE', 'statusiconsmodule');
 
-class SampleModuleServiceProvider extends ServiceProvider
+class StatusIconsModuleServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -72,10 +72,10 @@ class SampleModuleServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('samplemodule.php'),
+            __DIR__.'/../Config/config.php' => config_path('statusiconsmodule.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'samplemodule'
+            __DIR__.'/../Config/config.php', 'statusiconsmodule'
         );
     }
 
@@ -86,7 +86,7 @@ class SampleModuleServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/samplemodule');
+        $viewPath = resource_path('views/modules/statusiconsmodule');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -95,8 +95,8 @@ class SampleModuleServiceProvider extends ServiceProvider
         ],'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/samplemodule';
-        }, \Config::get('view.paths')), [$sourcePath]), 'samplemodule');
+            return $path . '/modules/statusiconsmodule';
+        }, \Config::get('view.paths')), [$sourcePath]), 'statusiconsmodule');
     }
 
     /**
@@ -106,12 +106,12 @@ class SampleModuleServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/modules/samplemodule');
+        $langPath = resource_path('lang/modules/statusiconsmodule');
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'samplemodule');
+            $this->loadTranslationsFrom($langPath, 'statusiconsmodule');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'samplemodule');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'statusiconsmodule');
         }
     }
 

@@ -13,7 +13,7 @@ class ComposerStaticInit6aa526200bedddcd20c789547740522c
         ),
         'M' => 
         array (
-            'Modules\\SampleModule\\' => 21,
+            'Modules\\StatusIconsModule\\' => 21,
         ),
     );
 
@@ -22,7 +22,7 @@ class ComposerStaticInit6aa526200bedddcd20c789547740522c
         array (
             0 => __DIR__ . '/..' . '/rivsen/hello-world/src',
         ),
-        'Modules\\SampleModule\\' => 
+        'Modules\\StatusIconsModule\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
         ),
