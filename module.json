@@ -1,9 +1,10 @@
 {
     "name": "Status Icons Module",
     "alias": "statusiconsmodule",
-    "description": "Adds quick acess icons to easily change the status of conversations",
+    "description": "Adds quick access icons to easily change the status of conversations",
     "version": "1.0.0",
     "keywords": [],
+    "img": "/modules/statusiconsmodule/img/Status-Icons-128x128.png",
     "active": 1,
     "order": 0,
     "providers": [
