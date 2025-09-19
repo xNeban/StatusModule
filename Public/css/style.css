@@ -1,4 +1,10 @@
-/**
- * Sample mudule styles
- */
+.status-icons{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.status-icons li{
+    display: inline;
+    padding: 4px;
+}

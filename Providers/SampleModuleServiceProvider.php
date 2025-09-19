@@ -29,16 +29,6 @@ class SampleModuleServiceProvider extends ServiceProvider
         $this->registerFactories();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        // Sample filter
-        \Eventy::addFilter('dashboard.before', function($value) {
-            return $value.'<p>'.\Module::getOption(SAMPLE_MODULE, 'dashboard_text').'</p>';
-        }, 20, 1);
-
-        // Sample action listener
-        \Eventy::addAction('non_existent_action', function($value) {
-            // Do nothing
-        }, 20, 1);
-
         // Add module's css file to the application layout
         \Eventy::addFilter('stylesheets', function($value) {
             array_push($value, '/modules/'.SAMPLE_MODULE.'/css/style.css');
