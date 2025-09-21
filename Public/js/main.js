@@ -50,4 +50,11 @@ function addHorizontalStatusIcons()
     liStatusIcons.appendChild(statusIcons);
 }
 
-addHorizontalStatusIcons();
+// splits the URL into an array of strings split by the forward slashes
+const pathSegments = window.location.pathname.split('/').filter(segment => segment !== '');
+
+// if we are on the conversation screen...
+if (pathSegments[0] == "conversation"){
+    addHorizontalStatusIcons();
+}
+
