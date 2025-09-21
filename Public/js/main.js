@@ -9,8 +9,8 @@ function addHorizontalStatusIcons()
     statusIcons.classList.add('status-icons');
     statusIcons.classList.add('conv-status'); // it must have this class for the links to work
 
-    // the array of statuses
-    const statuses = ['Active', 'Pending', 'Closed', 'Spam'];
+    // the array of statuses to be shown
+    const statuses = ['Active', 'Pending', 'Closed'];
 
     // create a 'li' and 'a' element for each status
     statuses.forEach((itemText, index)=> {
