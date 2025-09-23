@@ -1,4 +1,4 @@
-function addHorizontalStatusIcons()
+function addConversationStatusIcons()
 {
     // gets the next-prev arrows element in the conv-info element
     // the icons wil sit before the arrows
@@ -48,13 +48,40 @@ function addHorizontalStatusIcons()
 
     // adds the statusIcons 'ul' elements to the 'li' statusIcons elements under conv-info
     liStatusIcons.appendChild(statusIcons);
-}
+};
+
+function addReplyStatusIcons()
+{
+    function setDefaultReplyStatus()
+    {
+        // finds the selection form that controls the status of the reply
+        const replyStatus = document.querySelector('.note-statusbar.note-statusbar-toolbar.form-inline').querySelector("[name='status'].form-control.parsley-exclude");
+
+        // gets rid of the current default status
+        replyStatus.querySelector("[selected='selected']").removeAttribute('selected');
+
+        // sets the new default status
+        // 1 - Active
+        // 2 - Pending
+        // 3 - Closed
+        replyStatus.setAttribute('data-reply-status', '1');
+    };
+
+    setDefaultReplyStatus();
+
+    
+};
 
 // splits the URL into an array of strings split by the forward slashes
 const pathSegments = window.location.pathname.split('/').filter(segment => segment !== '');
 
 // if we are on the conversation screen...
 if (pathSegments[0] == "conversation"){
-    addHorizontalStatusIcons();
+    // adds the status icons for changing the conversation status
+    addConversationStatusIcons();
+
+    // adds the status icons for changing the status set by the reply WHEN the reply icon is clicked
+    const replyIcon = document.querySelector('.conv-reply.conv-action.glyphicon.glyphicon-share-alt');
+    replyIcon.addEventListener('click', addReplyStatusIcons);
 }
 
